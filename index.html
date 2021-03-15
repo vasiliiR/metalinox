@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,400&display=swap"
 		rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link href="style/slick-theme.css">
@@ -24,26 +25,41 @@
 			<div class="row remove__margin_padding">
 				<div class="header__block_1 remove__margin_padding">
 					<nav class="navbar navbar-expand-lg navbar-light  my__navStyle">
-						<div class="container">
+						<div class="container header__nav__media">
 							<a class="navbar-brand" href="#"><img src="./img/header/Frame.svg" alt="METALLINOX"></a>
 							<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-								data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-								aria-label="Toggle navigation">
+								data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+								aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
 							</button>
 							<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-								<div class="navbar-nav">
+								<div class="navbar-nav navbar__nav__media">
 									<a class="nav-link active" aria-current="page" href="#">О нас</a>
 									<a class="nav-link" href="#">товары</a>
 									<a class="nav-link" href="#">портфолио</a>
 									<a class="nav-link" href="#">новости</a>
 									<a class="nav-link" href="#">контакты</a>
 								</div>
+								<div class="  header__search">
+											
+									<div class="dropdown">
+										<button onclick="myFunction()" class="dropbtn"> 
+											<input type="text" placeholder="Поиск.." id="myInput" onkeyup="filterFunction()">
+										</button>
+										<div id="my_Dropdown" class="dropdown-content">
+										  
+										  <a href="#">О Нас</a>
+										  <a href="#">Товары</a>
+										  <a href="#">Портфолио</a>
+										  <a href="#">Новости</a>
+										  <a href="#">Контакты</a>
+										</div>
+									  </div>
+									  
+								</div>
 								<div class=" inner__header__social__icons_main">
 									<div class=" d-flex inner__header__row__social__links">
-										<div class="header__search">
-											<img src="./img/header/search.svg" alt="">
-										</div>
+										
 										<a href="#">
 											<div class=" inner__header__social__icons fb">
 												<img src="./img/header/facebook.svg" alt="Facebook">
@@ -82,19 +98,13 @@
 						<div class="your-class header__slider__style">
 							<div class="header__slider__img"><img src="./img/header/image 28.png" alt="img_1`"></div>
 							<div class="header__slider__img"><img src="./img/header/image 28.png" alt="img_1`"></div>
+							<div class="header__slider__img"><img src="./img/header/image 28.png" alt="img_1`"></div>
 						</div>
-						<div class="col-md-3 inner__header__slider__description" >
+						<div class="col-md-3 inner__header__slider__description">
 							<h2>Lorem Ipsum is simply dummy</h2>
 							<button class="my__btn">Lorem</button>
 						</div>
 					</div>
-
-
-
-
-
-
-
 				</div>
 
 			</div>
@@ -103,6 +113,22 @@
 
 	<!--Header end-->
 
+	<section class="above__us">
+		<div class="container">
+			<div class="row">
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
