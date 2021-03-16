@@ -23,6 +23,29 @@ $(document).ready(function(){
 				}
 			]
     });
+
+	$('.your-class_2').slick({
+		dots: false,
+		infinite: true,
+  		slidesToShow: 3,
+  		slidesToScroll: 1,
+		arrows: true,
+		nextArrow: '<div class="sprite-next"><img src="./img/products/left.svg" alt="left"></div>', // Кастомная стрелка "далее"
+		prevArrow: '<div class="sprite-prev"> <img src="./img/products/right.svg" alt="left"></div>', // Кастомная стрелка "назад"
+		
+
+		responsive: [
+			{
+			  breakpoint: 768,
+			  settings: {
+				arrows: false,
+				slidesToShow: 1
+			  }
+			},
+		  ]
+	});
+
+	
   });
 
   $('.slider').on('afterChange',function(e, slick, currentSlide){
@@ -58,6 +81,5 @@ function myFunction() {
 		a[i].style.display = "none";
 	  }
 	}
-
-	
   }
+

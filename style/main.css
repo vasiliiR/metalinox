@@ -343,13 +343,214 @@ header {
 
 .above__us__img__item {
   object-fit: cover;
-  
 }
 
+/*=========== End Above us==========*/
 
+/*===========Products==========*/
+.products {
+  margin-top: 8em;
+  margin-bottom: 2em;
+}
 
+.border__top__on__description {
+  border-top: 3px solid #232323;
+  width: 19em;
+}
 
-/*media*/
+.btn__on__slider {
+  text-align: center;
+}
+
+/*slider*/
+
+.item__slide__ > img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn__on__slider {
+  margin-left: 27%;
+}
+
+.your-class_2 {
+  position: relative;
+  padding: 0 40px;
+}
+
+.sprite-next {
+  left: 100px;
+  background-repeat: no-repeat;
+  width: max-content;
+}
+
+.sprite-next > img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.sprite-prev > img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+} /*=========== End Products==========*/
+
+/*=========== Start services==========*/
+
+.servicec {
+  margin-top: 8em;
+  margin-bottom: 8em;
+}
+
+.background__ofcontainer__services {
+  background: url("../img/services/image\ 23.png");
+  height: 28em;
+  background-size: cover;
+}
+
+.inner__services__block__tringle {
+  position: relative;
+  background-color: #232323;
+  opacity: 0.9;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 11em 2.3em;
+  margin-right: 0.7em;
+}
+
+.inner__services__block__tringle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 250px;
+  border-left-width: 0px;
+  border-bottom: 67px solid rgb(255, 255, 255);
+}
+
+.inner__services__block__tringle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 0px;
+  border-left-width: 250px;
+  border-bottom: 67px solid rgb(255, 255, 255);
+}
+
+/*=========== End services==========*/
+
+/*=========== Start news==========*/
+
+.news__promotion {
+  margin-top: 11em;
+  margin-bottom: 8em;
+}
+
+.up__description__of__section {
+  position: relative;
+}
+
+.up__description {
+  position: absolute;
+  top: -3em;
+}
+
+.inner__news__block {
+  background: url("../img/news/Group\ 68.png");
+  height: 23.5em;
+  background-size: cover;
+}
+
+.inner__news__block__left {
+  position: absolute;
+  left: -23%;
+  top: 0;
+  background: #232323;
+  opacity: 0.9;
+  max-width: 57em;
+  clip-path: polygon(0% 0%, 88% 0, 100% 50%, 87% 100%, 0% 100%);
+}
+
+.inner__news__block__right {
+  position: absolute;
+  right: 0;
+  margin-top: 3.4em;
+}
+
+.inner__news__block__left__text {
+  margin-left: 33.3%;
+  padding: 4em 0 4em 0;
+}
+
+.inner__news__block__left__text > p {
+  color: #fff;
+  width: 500px;
+  font-size: 18px;
+}
+/*=========== End news==========*/
+
+/*=========== Start ouer partners==========*/
+
+.ouer__partners {
+  margin-top: 1em;
+  margin-bottom: 8em;
+}
+
+.inner__ouerPartners__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 364px;
+  height: 274px;
+  margin: auto;
+  /*
+  background: #ddd;
+  opacity: 0.7;
+  z-index: -99;
+  */
+}
+
+.inner__ouerPartners__logo > img {
+  z-index: 999;
+}
+
+#ex_exfactor_logo {
+  width: 20em;
+}
+
+/*=========== End ouer partners==========*/
+
+/*=========== Start map==========*/
+.map_ {
+  margin-top: 1em;
+  margin-bottom: 8em;
+}
+/*=========== End map==========*/
+
+/*=========== Start footer==========*/
+  footer {
+    margin-top: 1em;
+    margin-bottom: 8em;
+  }
+
+  .social_links_for_footer {
+    margin-left: -4.5em;
+    margin-top: 1em;
+  }
+/*=========== End footer==========*/
+
+/***************************************************************************************/
+
+/*=========== Start MEDIA==========*/
 
 @media screen and (max-width: 1588px) {
   .header__slider__img::after {
@@ -411,13 +612,10 @@ header {
   .header__nav__media {
     margin-left: 3em;
   }
-}
 
-@media screen and (max-width: 1199px) {
-  .inner__aboveUS__big__block__img {
-    
+  .inner__aboveUS__big__block__img__item {
+    width: 259px;
   }
-  
 }
 
 @media screen and (max-width: 1164px) {
@@ -548,9 +746,8 @@ header {
     margin-left: -1em;
   }
 }
- 
-@media screen and (max-width: 348px) {
 
+@media screen and (max-width: 348px) {
   .inner__header__slider__description {
     left: 3em;
   }
